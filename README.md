@@ -1,10 +1,20 @@
-KEEP OUT -- IN PROGRESS
+# NSFW
 
+Soon...
+
+## Installation
+
+### test
+```
 docker build -t nsfwaas .
+```
 
-docker run -p 80:80/tcp nsfwaas
+### test
+```
+docker run -p 5000:80/tcp nsfwaas
+```
 
-curl -X POST -F "image=@beach.jpg" http://localhost/classify
-
-
-
+### test
+```
+curl -X POST -F "image=@test.jpg" http://localhost:5000/nsfw
+```
