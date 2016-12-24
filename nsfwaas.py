@@ -8,7 +8,7 @@ app.debug = True
 def index():
     return "Working..."
 
-@app.route("/nsfs", methods=["POST"])
+@app.route("/nsfw", methods=["POST"])
 def classify():
     global nsfw
     fsImage =  request.files.get("image")

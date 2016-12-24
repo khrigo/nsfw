@@ -1,6 +1,8 @@
 # NSFW
 
-Soon...
+This project uses Yahoo Open NSFW (Not Safe For Work) to detect images that contain pornographic content. OpenNSFW uses Caffe pretrained neural network models and has a very big success rate.
+
+The output is a float number from 0 to 1. Scores above 0.8 are NSFW. Everything below 0.2 is completely clean.
 
 ## Installation
 
