@@ -4,17 +4,18 @@ Soon...
 
 ## Installation
 
-### test
+### Build docker from Dockerfile
 ```
-docker build -t nsfwaas .
-```
-
-### test
-```
-docker run -p 5000:80/tcp nsfwaas
+docker build -t nsfw .
 ```
 
-### test
+### Run server on 5000 port from docker
+```
+docker run -p 5000:80/tcp nsfw
+```
+
+## Example
+### Send cURL request with image on server
 ```
 curl -X POST -F "image=@test.jpg" http://localhost:5000/nsfw
 ```
